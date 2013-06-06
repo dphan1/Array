@@ -20,7 +20,7 @@
     * Case 1: -3:00 (or +5:00) (from 0 to 9)
     * Case 2: -11:00 (or +10:00) (10 and above)
     * We just want to get the value 3, or 5, or 11
-   /*
+    */
    if (count($arrayTimeZoneChar) == 5) { // Time zone value is between 0 and 9
       $timeZone = $arrayTimeZoneChar[1];
    } else { // Time zone value is greater than 9
@@ -42,7 +42,7 @@
     * Some of the keys in the associative array:
     * [ts], [time], [offset], [isdst], [abbr]
     * We just want [abbr]
-   /*
+    */
    $transitions = $location->getTransitions();
    for ($i = 0; $i < count($transitions); $i++) {
       $abbreviation = $transitions[$i]["abbr"];
